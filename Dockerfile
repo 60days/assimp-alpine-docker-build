@@ -14,6 +14,6 @@ RUN cmake -G "Unix Makefiles" -DASSIMP_ENABLE_BOOST_WORKAROUND=YES -DCMAKE_CXX_C
 
 RUN make \
     && make install \
-    && ldconfig \
+    && ldconfig 
 
 CMD assimp -v
