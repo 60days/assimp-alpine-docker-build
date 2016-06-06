@@ -12,8 +12,7 @@ RUN ls
 
 RUN cmake -G "Unix Makefiles" -DASSIMP_ENABLE_BOOST_WORKAROUND=YES -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_COMPILER=gcc
 
-RUN generate \
-    && make \
+RUN make \
     && make install \
     && ldconfig \
 
