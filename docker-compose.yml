@@ -1,6 +1,0 @@
-assimp:
-  build:  .
-  volumes:
-    - ./in:/assimp/assimp/in
-    - ./out:/assimp/assimp/out
-  #command: ['iwatch -c "FBX-glTF -f %f -o out/ -e  &amp; mv %f out/" in/']
